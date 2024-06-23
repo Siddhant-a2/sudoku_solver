@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Sudoku Solver</h1>
+        </div>
+        <div class="box">
+            <table id="sudoku-board">
+                <tr id="r1">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+                <tr id="r2">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+                <tr id="r3" style="border-bottom:2px solid #FFFFFF;">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td><td contenteditable="true"></td contenteditable="true"> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+                <tr id="r4">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+                <tr id="r5">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+                <tr id="r6" style="border-bottom:2px solid #FFFFFF;">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+                <tr id="r7">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+                <tr id="r8">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+                <tr id="r9">
+                    <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true" style="border-right:2px solid #FFFFFF"></td><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-solve">
+            <button type="button">Solve!</button>
+        </div>
+        <div class="button-clear">
+            <button type="button">Clear board</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

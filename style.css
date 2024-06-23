@@ -1,0 +1,51 @@
+/* body's css */
+body{
+    background-color: #253439;
+}
+
+/* container's css */
+h1{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.container{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#FFFFFF
+}
+/* table's css */
+#sudoku-board{
+    border:2px solid #FFFFFF;
+    width:450px;
+    height:450px;
+    margin:10px;
+    border-collapse: collapse;
+    text-align: center;
+    padding:0px;
+}
+td{
+    border:1px solid #FFFFFF;
+    border-collapse: collapse;
+    width:50px;
+    height:50px;
+    font-size:1.6em;
+}
+/* button's css */
+button{
+    margin:10px;
+    font-size:1.4rem;
+    background-color:#D2E0FF;
+    border:none;
+    border-radius: 10px;
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button:hover{
+    background-color: aqua;
+}
